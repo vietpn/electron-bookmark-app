@@ -16,7 +16,6 @@ $(document).keydown((e) => {
     }
 })
 
-
 // show add-modal
 $('.open-add-modal').click(() => {
     $('#add-modal').addClass('is-active');
