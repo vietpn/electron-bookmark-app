@@ -15,7 +15,7 @@ exports.createWindow = () => {
     })
 
     // Devtools
-    this.win.webContents.openDevTools()
+    // this.win.webContents.openDevTools()
 
     // load main window content
     this.win.loadFile('./renderer/main.html')

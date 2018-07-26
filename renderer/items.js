@@ -28,7 +28,11 @@ exports.changeItem = (direction) => {
 
 // Window function
 // Delete item by index
-window.deleteItem = (i) => {
+window.deleteItem = (i = false) => {
+    // Set i to active item if not passed as argument
+    if (i === false) i = ($('.read-item.is-active').index() - 1)
+
+    // Remove item from DOM
     $('.read-item').eq(i).remove();
 
     // Remove from toreadItems array
